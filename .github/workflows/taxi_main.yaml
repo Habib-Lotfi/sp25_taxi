@@ -26,4 +26,5 @@ jobs:
       - name: Run new data fetch pipeline and load to Hopsworks
         env:
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORK }}
-        run: python src/feature_pipeline.py
+          PYTHONPATH: ${{ github.workspace }}
+        run: python -m src.feature_pipeline
