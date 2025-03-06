@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-              - name: Set up Python
+      - name: Set up Python  # Fixed indentation here
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'  # Specify the Python version
